@@ -81,20 +81,38 @@
 // },1000) 
 
 
-const name=document.querySelector("#name")
-const btn=document.querySelector(".btn")
-const list=document.querySelector(".list")
+// const name=document.querySelector("#name")
+// const btn=document.querySelector(".btn")
+// const list=document.querySelector(".list")
 
-btn.addEventListener("click",()=>{
-    if(name.value==="")return
-    const li=document.createElement("li")
-    const dlt=document.createElement("button")
-    dlt.innerText="Delete"
-    li.innerText=name.value;
-    dlt.addEventListener("click",()=>{
-        list.removeChild(li)
-    })
-    list.appendChild(li)
-    li.appendChild(dlt)
-    name.value=""
-})
+// btn.addEventListener("click",()=>{
+//     if(name.value==="")return
+//     const li=document.createElement("li")
+//     const dlt=document.createElement("button")
+//     dlt.innerText="Delete"
+//     li.innerText=name.value;
+//     dlt.addEventListener("click",()=>{
+//         list.removeChild(li)
+//     })
+//     list.appendChild(li)
+//     li.appendChild(dlt)
+//     name.value=""
+// })
+
+console.log("Starting homework...");
+
+setTimeout(() => {
+    console.log("Homework done!");
+    console.log("Starting dinner...");
+
+    setTimeout(() => {
+        console.log("Dinner done!");
+        console.log("Getting ready to go out...");
+        
+        setTimeout(() => {
+            console.log("Go to the playground!");
+        }, 1000); // after dinner
+
+    },1500); // dinner time
+
+}, 2000); // homework time
