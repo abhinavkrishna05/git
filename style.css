@@ -9,3 +9,11 @@
 #stop{
     color:green;
 }
+li{
+    width:500px;
+    background-color: cadetblue;
+    display:flex;
+    justify-content: space-between;
+    padding:10px;
+    margin-top:5px;
+}
